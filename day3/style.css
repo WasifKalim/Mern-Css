@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    border: 2px solid green;
+    display: flex;
+    /*flex-direction:*/ /*row; row, column, row-reverse, column-reverse */
+
+    /* Default value - nowrap */
+    flex-wrap: wrap; /* box width remains same */
+    /* wrap-reverse - last box will move upward */
+
+    /* flex-flow: row wrap; /* single line flex-direction flex-wrap */
+
+    /* It works with respect to MAIN-AXIS(horizontal) */
+    /* justify-content: flex-start; /* all items will start from starting */
+    /* justify-content: flex-end; /* all items will lie in end */
+    justify-content: center;
+    /* justify-content: space-evenly;
+
+    /* It works with respect to CROSS-AXIS(vertical) */
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+    /* align-items: stretch; */
+    align-items: center;
+
+    /* align-content - works for in between main and cross axis */
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between; */
+    /* align-content: space-evenly;  */
+
+    /* gap: 10px; */
+
+    /* row-gap: 5px; */
+    /* column-gap: 5px; */
+    
+}
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+
+    /* width: 100px; */
+    /* Not trim the content, auto increase the size */
+    /* flex-basis: 100px; */
+    flex-basis: 50%;
+
+    /* margin: 5px; */
+}
+
+#box1{
+    /* by default - 0 */
+    order: 1;
+
+    /* to take the extra spaces */
+    /* flex-grow: 1; */
+
+    /* It will shrink when sequeze by 1/4 */
+    /* It will not work if flex is wrap */
+    /* flex-shrink: 4; */
+
+    /* flex: order grow shrink basis; */
+    /* flex: 3 4 2 120; */
+}
+
+#box3{
+
+    /* locations up and down in flex */
+    /* align-self: flex-end; */
+    order: 4;
+}
+#box2{
+    order: 2;
+    /* align-self: stretch; */
+}

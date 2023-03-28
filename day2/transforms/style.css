@@ -1,0 +1,36 @@
+.box{
+    background-color: aqua;
+
+    /* transform: translate(100px, 100px); */
+    /* transform: translateX(100px); */
+    /* transform: translateZ(100px); */
+
+    /* rotate */
+    /* transform: rotate(-45deg); */
+
+    /* scale- zoom */
+    transform: scale(4, 6); /* horizontal vertical zoom*/
+
+}
+
+/* copied */
+div{
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+}
+  
+.perspective {
+    /* Includes a perspective to create a 3D space */
+    transform: perspective(400px) translateZ(-100px);
+    background-color: limegreen;
+}
+  
+.scaled-translated {
+    /* Includes a perspective to create a 3D space */
+    border:1px solid black;
+    margin-left:200px;
+    transform: perspective(400px) scaleZ(6) rotateX(45deg) rotateY(45deg) ;
+    background-color: pink;
+}
+  
